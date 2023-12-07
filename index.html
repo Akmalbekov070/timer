@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							clifford: '#da373d',
+						},
+					},
+				},
+			};
+		</script>
+		<style type="text/tailwindcss">
+			@layer utilities {
+				.content-auto {
+					content-visibility: auto;
+				}
+			}
+		</style>
+		<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+		<style>
+			body {
+				background-color: black;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mt-[200px]">
+			<div class="w-full flex items-center justify-center relative after::top-[200px]">
+				<div class="w-[380px] h-auto mx-auto p-6 bg-gray-700 rounded-lg flex items-center justify-center gap-2">
+					<div class="text-[80px] text-green-400" id="houres">00</div>
+					<span class="text-4xl text-green-500">:</span>
+					<div class="text-[80px] text-green-400" id="minut">00</div>
+					<span class="text-4xl text-green-500">:</span>
+					<div class="text-[80px] text-green-400" id="secund">00</div>
+				</div>
+			</div>
+		</div>
+		<script src="./java/java.js"></script>
+	</body>
+</html>
